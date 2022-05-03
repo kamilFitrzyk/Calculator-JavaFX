@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="400.0" styleClass="mainPane" stylesheets="@stylesheets/MainWindowStyle.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.javastart.MainWindowController">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" styleClass="mainPane">
+         <center>
+            <Pane layoutY="10.0" prefHeight="500.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane fx:id="bnt7" layoutX="8.0" onMouseClicked="#onNumberClicked" prefHeight="90.0" prefWidth="90.0" styleClass="highlight">
+                     <children>
+                        <Label layoutX="37.0" layoutY="23.0" text="7">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="bnt8" layoutX="106.0" onMouseClicked="#onNumberClicked" prefHeight="90.0" prefWidth="90.0" styleClass="highlight">
+                     <children>
+                        <Label layoutX="37.0" layoutY="23.0" text="8">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                     </children></Pane>
+                  <Pane fx:id="bnt9" layoutX="204.0" onMouseClicked="#onNumberClicked" prefHeight="90.0" prefWidth="90.0" styleClass="highlight">
+                     <children>
+                        <Label layoutX="37.0" layoutY="23.0" text="9">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                     </children></Pane>
+                  <Pane fx:id="bntPlus" layoutX="302.0" onMouseClicked="#onOperationClicked" prefHeight="90.0" prefWidth="90.0" styleClass="highlight">
+                     <children>
+                        <Label layoutX="35.0" layoutY="23.0" text="+">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                     </children></Pane>
+                  <Pane fx:id="bnt4" layoutX="8.0" layoutY="96.0" onMouseClicked="#onNumberClicked" prefHeight="90.0" prefWidth="90.0" styleClass="highlight">
+                     <children>
+                        <Label layoutX="37.0" layoutY="23.0" text="4">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="bnt5" layoutX="106.0" layoutY="96.0" onMouseClicked="#onNumberClicked" prefHeight="90.0" prefWidth="90.0" styleClass="highlight">
+                     <children>
+                        <Label layoutX="37.0" layoutY="23.0" text="5">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="bnt6" layoutX="204.0" layoutY="96.0" onMouseClicked="#onNumberClicked" prefHeight="90.0" prefWidth="90.0" styleClass="highlight">
+                     <children>
+                        <Label layoutX="37.0" layoutY="23.0" text="6">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="btnMinus" layoutX="302.0" layoutY="96.0" onMouseClicked="#onOperationClicked" prefHeight="90.0" prefWidth="90.0" styleClass="highlight">
+                     <children>
+                        <Label layoutX="37.0" layoutY="23.0" text="-">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="bnt1" layoutX="8.0" layoutY="196.0" onMouseClicked="#onNumberClicked" prefHeight="90.0" prefWidth="90.0" styleClass="highlight">
+                     <children>
+                        <Label layoutX="37.0" layoutY="23.0" text="1">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="bnt2" layoutX="106.0" layoutY="196.0" onMouseClicked="#onNumberClicked" prefHeight="90.0" prefWidth="90.0" styleClass="highlight">
+                     <children>
+                        <Label layoutX="37.0" layoutY="23.0" text="2">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="bnt3" layoutX="204.0" layoutY="196.0" onMouseClicked="#onNumberClicked" prefHeight="90.0" prefWidth="90.0" styleClass="highlight">
+                     <children>
+                        <Label layoutX="37.0" layoutY="23.0" text="3">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="bntMultiply" layoutX="302.0" layoutY="196.0" onMouseClicked="#onOperationClicked" prefHeight="90.0" prefWidth="90.0" styleClass="highlight">
+                     <children>
+                        <Label layoutX="39.0" layoutY="23.0" text="*">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="8.0" layoutY="294.0" prefHeight="90.0" prefWidth="90.0" styleClass="highlight" />
+                  <Pane fx:id="bnt0" layoutX="106.0" layoutY="294.0" onMouseClicked="#onNumberClicked" prefHeight="90.0" prefWidth="90.0" styleClass="highlight">
+                     <children>
+                        <Label layoutX="37.0" layoutY="23.0" text="0">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="bntEquals" layoutX="204.0" layoutY="294.0" onMouseClicked="#onEqualsClicked" prefHeight="90.0" prefWidth="90.0" styleClass="highlight">
+                     <children>
+                        <Label layoutX="37.0" layoutY="23.0">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="35.0" layoutY="23.0" text="=">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="bntDivide" layoutX="302.0" layoutY="294.0" onMouseClicked="#onOperationClicked" prefHeight="90.0" prefWidth="90.0" styleClass="highlight">
+                     <children>
+                        <Label layoutX="39.0" layoutY="23.0" text="/">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+               <BorderPane.margin>
+                  <Insets top="20.0" />
+               </BorderPane.margin>
+            </Pane>
+         </center>
+         <top>
+            <Pane fx:id="titlePane" prefHeight="80.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField id="textResult" fx:id="resultField" alignment="TOP_RIGHT" editable="false" layoutX="110.0" layoutY="40.0" prefHeight="0.0" prefWidth="280.0" styleClass="highlight">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+                  <Pane fx:id="bntClear" layoutX="8.0" layoutY="40.0" onMouseClicked="#onClearClicked" prefHeight="50.0" prefWidth="90.0" styleClass="highlight">
+                     <children>
+                        <Label layoutX="38.0" layoutY="1.0" text="C">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </top>
+      </BorderPane>
+   </children>
+</Pane>
