@@ -2,6 +2,7 @@ package org.javastart;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
@@ -12,7 +13,7 @@ import java.util.ResourceBundle;
 public class MainWindowController implements Initializable {
 
     private String operator = "";
-    private Double number1 = 0.0;
+    private double number1 = 0.0;
 
     @FXML
     private Pane mainPane;
@@ -32,14 +33,17 @@ public class MainWindowController implements Initializable {
     @FXML
     private void onNumberClicked(MouseEvent event) {
         int value = Integer.parseInt(((Pane) event.getSource()).getId().replace("bnt", ""));
-        //System.out.println(value);
-        String text = resultField.getText();
-        resultField.setText(text + value);
+        if (resultField.getText().equals("0")) {
+            resultField.setText(value + "");
+        } else {
+            resultField.setText(resultField.getText() + value);
+        }
+
     }
 
     @FXML
     private void onClearClicked(MouseEvent event) {
-        resultField.setText("");
+        resultField.setText("0");
         operator = "";
     }
 
@@ -61,7 +65,7 @@ public class MainWindowController implements Initializable {
                 break;
         }
         number1 = Double.parseDouble(resultField.getText());
-        resultField.setText("");
+        resultField.setText("0");
     }
 
     @FXML
@@ -78,10 +82,28 @@ public class MainWindowController implements Initializable {
                 resultField.setText((number1 * number2) + "");
                 break;
             case "/":
-                resultField.setText((number1 / number2) + "");
+                if (number2 != 0 ) {
+                    resultField.setText((number1 / number2) + "");
+                } else {
+                    Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setContentText("Divide by zero!");
+                    alert.show();
+                }
+
                 break;
         }
         operator = "";
+    }
+
+    @FXML
+    public void onDotClicked(MouseEvent event) {
+        String text = resultField.getText();
+
+        if (!text.contains(".") && !text.isEmpty()) {
+            resultField.setText(resultField.getText() + ".");
+        } else if (text.isEmpty()) {
+            resultField.setText("0.");
+        }
     }
 
 

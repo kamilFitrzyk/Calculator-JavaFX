@@ -73,7 +73,7 @@
                         </Label>
                      </children>
                   </Pane>
-                  <Pane fx:id="btnMinus" layoutX="302.0" layoutY="96.0" onMouseClicked="#onOperationClicked" prefHeight="90.0" prefWidth="90.0" styleClass="highlight">
+                  <Pane fx:id="bntMinus" layoutX="302.0" layoutY="96.0" onMouseClicked="#onOperationClicked" prefHeight="90.0" prefWidth="90.0" styleClass="highlight">
                      <children>
                         <Label layoutX="37.0" layoutY="23.0" text="-">
                            <font>
@@ -118,7 +118,14 @@
                         </Label>
                      </children>
                   </Pane>
-                  <Pane layoutX="8.0" layoutY="294.0" prefHeight="90.0" prefWidth="90.0" styleClass="highlight" />
+                  <Pane fx:id="bntDot" layoutX="8.0" layoutY="294.0" onMouseClicked="#onDotClicked" prefHeight="90.0" prefWidth="90.0" styleClass="highlight">
+                     <children>
+                        <Label layoutX="42.0" layoutY="23.0" text=".">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                     </children></Pane>
                   <Pane fx:id="bnt0" layoutX="106.0" layoutY="294.0" onMouseClicked="#onNumberClicked" prefHeight="90.0" prefWidth="90.0" styleClass="highlight">
                      <children>
                         <Label layoutX="37.0" layoutY="23.0" text="0">
@@ -160,7 +167,7 @@
          <top>
             <Pane fx:id="titlePane" prefHeight="80.0" prefWidth="400.0" BorderPane.alignment="CENTER">
                <children>
-                  <TextField id="textResult" fx:id="resultField" alignment="TOP_RIGHT" editable="false" layoutX="110.0" layoutY="40.0" prefHeight="0.0" prefWidth="280.0" styleClass="highlight">
+                  <TextField id="textResult" fx:id="resultField" alignment="TOP_RIGHT" editable="false" layoutX="110.0" layoutY="40.0" prefHeight="0.0" prefWidth="280.0" styleClass="highlight" text="0">
                      <font>
                         <Font size="24.0" />
                      </font>
